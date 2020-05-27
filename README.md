@@ -8,6 +8,7 @@
 </hr>
 
 # 在线体验
+或者微信搜索：快点查查
 ![Image text](https://github.com/tomato-cc/wxmap/blob/master/ty.jpg)
  
 # 感觉有趣赏杯咖啡
