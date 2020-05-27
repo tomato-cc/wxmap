@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "快点查查",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "heartbeat": "/components/heartbeat/heartbeat"
+  }
+}

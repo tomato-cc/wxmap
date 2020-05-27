@@ -1,0 +1,10 @@
+<view class='systeminfo'>
+  <view class='brand'>
+    <image src='cloud://wchat-3629g.7763-wchat-3629g-1302214208/wc/images/weather/mobile.png'></image>
+    <text>{{systeminfoObj.brand}}</text>
+  </view>
+  <view class='item' wx:for='{{systeminfoArr}}' wx:key='{{index}}'>
+    <view class='key'>{{item.name}}</view>
+    <view class='value'>{{systeminfoObj[item.key]}}</view>
+  </view>
+</view>

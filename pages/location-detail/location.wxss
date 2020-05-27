@@ -1,0 +1,20 @@
+.cu-bar{
+  position: fixed;
+  left:0rpx;
+  right:0rpx;
+  width: 100wh;
+  height: 55px;
+  z-index: 999;
+}
+.nav{
+  position: fixed;
+  left:0rpx;
+  right:0rpx;
+  height: 49px;
+  width: 100wh;
+  z-index: 999;
+}
+.scroll {
+  margin-top: -1rpx;
+  height: calc(100vh);
+}

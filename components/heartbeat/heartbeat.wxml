@@ -1,0 +1,2 @@
+<image wx:for='{{arr}}' wx:key='{{index}}' animation='{{animations[index]}}' class='heart' style='left:{{lefts[index]}}px;top:{{tops[index]}}px;width:{{widths[index]}}rpx;height:{{widths[index]}}rpx;' 
+src='cloud://wchat-3629g.7763-wchat-3629g-1302214208/wc/images/weather/heartbeat.png'></image>

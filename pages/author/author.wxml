@@ -1,0 +1,35 @@
+<cu-custom bgColor="bg-gradual-pink">
+  <view slot="content">关于</view>
+</cu-custom>
+
+<view class="padding-xl radius shadow-warp  bg-gradual-blue text-center">
+  <image class="logo round shadow-warp" src="{{config.aboutInfo.logo}}"></image>
+  <view class="version">{{config.aboutInfo.version}}</view>
+  <view class="title">{{config.aboutInfo.title}}</view>
+  <view>这么实用的工具，快分享给自己的亲朋好友吧</view>
+  <button open-type="share" class="cu-btn cuIcon-share round bg-yellow margin-top">分享此小程序</button>
+  </view>
+
+   <view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item" data-copyinfo="{{item.copyInfo?item.copyInfo:item.url}}" bindtap="{{item.action}}" wx:for="{{config.aboutInfo.listData}}" wx:key="item">
+      <view class="content">
+        <text class="cuIcon-{{item.icon}} text-red"></text>
+        <text class="text-grey">{{item.text}}</text>
+      </view>
+       <view class="action">
+        <text class="text-grey text-sm">{{item.url}}</text>
+       </view>
+    </view>
+
+      <view>
+      <button open-type="contact" show-message-card='true' class='contact' >在线客服</button>
+      </view>
+
+  </view>
+ 
+ <!--底部说明信息-->
+  <view class="bottom-desc">
+    <text>{{config.footerInfo}}</text>
+  </view>
+
+ 

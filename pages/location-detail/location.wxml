@@ -1,0 +1,36 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="true">
+<view slot="backText">返回</view>
+  <view slot="content">{{navigationBarTitleText}}</view>
+</cu-custom>
+
+<view class="cu-bar bg-gradual-pink solid-bottom" style="top:{{CustomBar}}px;">
+   <view class="action">
+    <text class="cuIcon-location text-white"></text> 文字版导航
+  </view>
+</view>
+
+<scroll-view scroll-x class="bg-white nav text-center solid-bottom" style="top:{{admgtop}}px">
+  <view class="cu-item {{index==TabCur?'text-blue cur':''}}" wx:for="{{3}}" wx:key="unique" bindtap="tabSelect" data-id="{{index}}">
+    {{tabNames[index]}}
+  </view>
+</scroll-view>
+ 
+
+<view  style="margin-top:120px;">
+<view class="cu-list menu  sm-border card-menu" wx:for="{{steps}}" wx:key="unique">
+<view class="cu-item">
+  <view class="content">
+    <text class="cuIcon-activity text-grey"></text>
+    <text class="text-grey">{{index+1}}、{{item.instruction}}</text>
+  </view>
+</view>
+</view>
+</view>
+
+ <view class="margin-top" style="margin-bottom:100px;">
+<ad unit-id="adunit-eb4291dbd842e44f" ad-type="grid" grid-opacity="0.8" grid-count="5" ad-theme="white"></ad>
+ </view>
+
+  <view class="bottom-desc">
+    <text>{{config.footerInfo}}</text>
+  </view>

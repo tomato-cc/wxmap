@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/weather/weather",
+    "pages/citychoose/citychoose",
+    "pages/setting/setting",
+    "pages/systeminfo/systeminfo",
+    "pages/location/location",
+    "pages/location-detail/location",
+    "pages/author/author"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "快点查查",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "permission":{
+    "scope.userLocation": {
+      "desc":"需要根据您当前位置快速为您找到附近信息"
+    }
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d81e06",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "/images/list.png",
+        "selectedIconPath": "/images/list_act.png",
+        "text": "附近"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/detail.png",
+        "selectedIconPath": "/images/detai_act.png",
+        "text": "详情"
+      },
+      {
+        "pagePath": "pages/weather/weather",
+        "iconPath": "/images/weater.png",
+        "selectedIconPath": "/images/weater_act.png",
+        "text": "天气"
+      },
+      {
+        "pagePath": "pages/author/author",
+        "iconPath": "/images/about.png",
+        "selectedIconPath": "/images/about_act.png",
+        "text": "关于"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/resources/lib/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
+}

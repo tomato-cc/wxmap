@@ -1,0 +1,75 @@
+/*页面底部说明信息*/
+.cu-bar{
+  position: fixed;
+  left:0rpx;
+  right:0rpx;
+  width: 100wh;
+  height: 55px;
+  z-index: 999;
+}
+.text-distance{
+  margin-right: 0px;
+}
+/*页面刷新按钮*/
+.cu-list.menu>.cu-item.arrow{
+  padding-right: 70rpx;
+}
+.handle {
+  width: 80rpx;
+  height: auto;
+  position: fixed;
+  bottom: 60rpx;
+  right: 50rpx;
+  z-index: 100;
+}
+
+.handle > .location{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.handle > .refresh{
+  margin-top: 50rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+ 
+
+.handle > .refresh:active {
+  transform: rotate(720deg);
+  transition: all 1s ease;
+}
+
+/*没有数据样式*/
+ 
+
+ 
+.no-data image {
+  height: 128rpx;
+  widows: 128rpx;
+  margin-top: 100rpx;
+}
+
+/*没有连网*/
+
+.error {
+  background-color: #fff;
+  text-align: center;
+}
+
+.error-info {
+  margin-top: 50rpx;
+  text-align: center;
+  padding: 0 150rpx;
+  font-size: 30rpx;
+  margin-bottom: 50rpx;
+  line-height: 50rpx;
+  color:red;
+}
+
+.error image {
+  height: 300rpx;
+  widows: 300rpx;
+  margin-top: 100rpx;
+}

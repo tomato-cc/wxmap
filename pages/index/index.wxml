@@ -1,0 +1,71 @@
+<cu-custom bgColor="bg-gradual-pink">
+  <view slot="content">{{config.appTitle}}</view>
+  </cu-custom>
+  <!--顶部基本信息-->
+<view class="action" wx:if="{{onLine && yesAuth}}" style="top:{{CustomBar}}px;">
+    <text class="cuIcon-favorfill text-white"></text> 为您找到附近[{{size}}]条信息，GO！
+    <button class="cuIcon-location cu-btn bg-cyan sm round" bindtap="doNavToLocation">地图</button>
+    <button class="cuIcon-share cu-btn bg-yellow sm round" style="margin-left:10rpx;" open-type="share">分享</button>
+</view>
+  
+  <!--首页头部格子广告-->
+  <!-- <view style="margin-top:{{admgtop}}px">
+  <ad unit-id="adunit-34866f79e887594a" ad-type="grid" grid-opacity="0.8" grid-count="5" ad-theme="white"></ad>
+  </view> -->
+
+<view wx:if="{{onLine && yesAuth}}">
+  
+  <!--视图滚动区域-->
+  <view wx:if="{{size > 0}}">
+
+   <view class="cu-list menu  sm-border card-menu margin-top" wx:for="{{list}}" wx:key="unique" data-id="{{item.id}}" bindtap="tapItem">
+    <view class="cu-item arrow" >    
+       <view class="content padding-tb-sm">
+        <view>
+        <text class="cuIcon-home text-red"></text>
+          <text class="text-blue margin-right-xs"></text> {{item.name}}[{{index+1}}]</view>
+        <view class="text-gray text-sm">
+          <text class="cuIcon-locationfill margin-right-xs"></text>{{item.briefAddr}}</view>
+      </view>
+
+
+        <view class="action">
+        <text class="text-grey text-sm text-distance">{{item.distance}}米</text>
+        </view>
+    </view>
+   </view>
+
+
+  </view>
+
+ <!--首页底部视频广告-->
+ <!-- <view class="margin-top">
+    <ad unit-id="adunit-85187b29e1e5c09a" ad-type="video" ad-theme="white"></ad>
+  </view> -->
+
+
+  <!--查无结果处理界面-->
+  <view class="no-data  text-center" wx:if="{{size == 0}}">
+    <image src="cloud://wchat-3629g.7763-wchat-3629g-1302214208/wc/images/Sorry.png" mode="aspectFit"></image>
+    <view class="error-info">正在飞速为您查找：{{config.keyword}}</view>
+    <view>
+      <button class="cu-btn bg-grey lg"   bindtap="doRefresh">要不！刷新试试</button>
+    </view>
+  </view>
+</view>
+
+<!--没有权限-->
+<view class="container error  text-center" wx:if="{{noAuth}}">
+    <image src="cloud://wchat-3629g.7763-wchat-3629g-1302214208/wc/images/Sorry.png" mode="aspectFit"></image>
+    <view class="error-info">不是我不帮你，你连定位权限都不开启，我就没法了。</view>
+    <button class="cu-btn bg-grey lg" bindtap="doAuth">要不！重新获取权限</button>
+</view>
+
+<!--没有网络显示-->
+<view class="container error text-center" wx:if="{{!onLine}}">
+    <image src="cloud://wchat-3629g.7763-wchat-3629g-1302214208/wc/images/Sorry.png" mode="aspectFit"></image>
+    <view class="error-info">在这个网络不可缺少的时代，居然没有连网，我也帮不了你了。</view>
+      <button class="cu-btn bg-grey lg" bindtap="doRefresh">要不！刷新试试</button>
+</view>
+
+

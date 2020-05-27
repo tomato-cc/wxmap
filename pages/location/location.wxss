@@ -1,0 +1,57 @@
+/*容器区域*/
+
+.main {
+  height: calc(100vh);
+  width: 100%;
+}
+
+/*地图样式控制*/
+
+map {
+  height: calc(100vh - 160rpx);
+  width: 100%;
+}
+
+/*底部详细信息控制*/
+
+.descript {
+  background-color: #FFFFFF;
+  height: 300rpx;
+  width: 100%;
+  padding: 20rpx;
+  position: absolute;
+  bottom: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+}
+
+ .descript button{
+   margin: 10rpx;
+ }
+  .descript button text{
+    margin-right: 10rpx;
+  }
+
+.descript  .name {
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 41rpx;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top:15rpx;
+}
+
+.descript  .brief-addr {
+  height: 100rpx;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+/*详细路径导航按钮*/
+
+.navigate {
+  width: 130rpx;
+  height: 130rpx;
+}

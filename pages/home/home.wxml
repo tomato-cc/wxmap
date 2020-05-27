@@ -1,0 +1,23 @@
+<scroll-view scroll-y="{{modalName==null}}" class="page {{modalName!=null?'show':''}}">
+  <cu-custom bgColor="bg-gradual-pink" >
+    <!-- 
+    <cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+    <view slot="backText">返回</view> -->
+    <view slot="content" >快点查查</view>
+  </cu-custom>
+  
+  <view class="cu-form-group">
+		<input bindinput ="searchKeyword" placeholder="{{searchKeyword ? '' : '输入附近想找的'}}"></input>
+		<button class="cu-btn" bindtap="select" >我要搜</button>
+	</view>
+  <view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}" >
+    <!-- 遍历图 -->
+    <view class="cu-item" wx:for="{{iconList}}" bindtap="search" data-keyword="{{item.keyword}}">
+      <!-- 图标 -->
+      <view class="cuIcon-{{item.icon}} text-{{item.color}}"></view>
+      <!-- 标题 -->
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+    <view class='footer'>{{footerMsg}}</view>
+</scroll-view>

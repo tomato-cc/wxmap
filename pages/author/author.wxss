@@ -1,0 +1,35 @@
+.authorview {
+  text-align: center;
+  width: calc(100vw);
+  padding: 10px;
+}
+
+/*.logo*/
+
+.logo {
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 30rpx;
+}
+
+/*版本信息*/
+
+.version {
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.title {
+  margin-bottom: 30rpx;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+/*客服信息*/
+.contact {
+  margin-bottom: 30rpx;
+  font-size: 35rpx;
+  margin-top: 25rpx;
+  color: gray;
+  font-weight: bold;
+}
+ 

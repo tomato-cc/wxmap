@@ -1,0 +1,27 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+    <view slot="backText">返回</view>
+  <view slot="content">地图标注</view>
+</cu-custom>
+<view class="main">
+  <map id="map" 
+      longitude="{{longitude}}" 
+      latitude="{{latitude}}" 
+      scale="15" 
+      markers="{{markers}}" 
+      bindmarkertap="doMarkertap"
+      polyline="{{polyline}}"
+      show-location>
+  </map>
+  <view class="descript">
+      <view class="name">{{toiletName}}</view>
+      <view class="brief-addr">{{briefAddr}}</view>
+    <view class="flex justify-center align-center">
+      <button class="cu-btn bg-red round" bindtap="goDetail"><text class="cuIcon-form"></text> 文字导航</button>
+      <button class="cu-btn bg-blue round" bindtap="goApp"><text class="cuIcon-notification"></text> 语音导航</button>
+    </view>
+
+       
+  </view>
+
+
+</view>
