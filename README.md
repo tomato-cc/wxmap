@@ -5,6 +5,9 @@
 # 在线体验
 ![Image text](https://img-blog.csdnimg.cn/20200528110529607.png)
 
+# 效果预览
+![Image text](https://img-blog.csdnimg.cn/20200528112530994.gif)
+
 # 感觉有趣赏杯咖啡
 ![Image text](https://img-blog.csdnimg.cn/2020052721344692.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3RvbWF0b2Nj,size_16,color_FFFFFF,t_70)
 
