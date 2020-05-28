@@ -17,6 +17,17 @@
 
 
 # 使用说明
- 文档编写中
-
+#### 环境准备
+* Node.js
+* 注册微信小程序开发者
+#### API工具准备
+*  <a href="http://lbs.qq.com/miniProgram/jsSdk/jsSdkGuide/jsSdkOverview" target="_blank">注册qqmap开发者</a>
+*  <a href="https://console.amap.com/dev/key/app" target="_blank">注册高德地图开发者</a>
+*  <a href="https://dev.heweather.com/" target="_blank">注册和风天气开发者</a>
 </hr>
+*  <a href="https://developer.hitokoto.cn/sentence/" target="_blank">一言接口使用文档</a>
+</hr>
+
+#### 使用步骤
+*  <a href="https://blog.csdn.net/tomatocc/article/details/106402276" target="_blank">项目部署步骤</a>
+
